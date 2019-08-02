@@ -1,6 +1,6 @@
 ## docker 运行
 
-docker run -p 6333:6379 -d --name redis --restart=always hub.c.163.com/library/redis:latest
+docker run -p 6333:6379 -d --name redis --restart=always registry.cn-shanghai.aliyuncs.com/caiyc/redis:latest
 
 
 ## 配置注意点
