@@ -9,6 +9,6 @@ docker run -p 6333:6379 -d --name redis --restart=always registry.cn-shanghai.al
 
 2. 安全方面 控制授权密码 、 暴露端口 6333 
 
-3. 
+3. 集群方案
 
 
