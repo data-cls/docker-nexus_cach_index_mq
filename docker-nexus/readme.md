@@ -1,4 +1,4 @@
-## 构建docker-nexus
+## 1. 构建docker-nexus
 ~~~bash
 解压 Dockerfile  nexus.war  server.xml
 
@@ -9,9 +9,9 @@ docker build -t my-nexus:latest .
 docker run -d -p 8081:8081 --name my-nexus --restart always 
 -v /usr/local/nexus-storage:/usr/local/nexus-storage nexus:latest
 ~~~
-## 默认用户和密码  admin |  admin123
+## 2. 默认用户和密码  admin |  admin123
 
-## maven中的 pom.xml 配置
+## 3. maven中的 pom.xml 配置
 
 	<repositories>
 		<repository>
