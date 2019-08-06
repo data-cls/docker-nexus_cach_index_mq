@@ -1,10 +1,11 @@
-## docker 运行
+## 1.docker 运行
 
 ~~~bash
-docker run -p 6333:6379 -d --name redis --restart=always registry.cn-shanghai.aliyuncs.com/caiyc/redis:latest
+docker run -p 6333:6379 -d --name redis \
+--restart=always registry.cn-shanghai.aliyuncs.com/caiyc/redis:latest
 ~~~
 
-## 配置注意点
+## 2.配置注意点
 ~~~bash
 1. 客户端 redis-desktop-manager-0.8.8.384.exe 连接测试
 
