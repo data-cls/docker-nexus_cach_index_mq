@@ -14,3 +14,7 @@ docker run -p 6333:6379 -d --name redis \
 3. 集群方案
 ~~~
 
+## 了解更多请联系我
+
+<img src="my.jpg" height="50%" width="50%" />
+
