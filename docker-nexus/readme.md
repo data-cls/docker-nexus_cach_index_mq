@@ -28,4 +28,4 @@ docker run -d -p 8081:8081 --name my-nexus --restart always
 
 
 ## 获取更多的私服信息请联系我
-<img src="my.jpg" height="50" width="50"/>
+<img src="my.jpg" height="50%" width="50%"/>
