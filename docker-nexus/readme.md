@@ -4,9 +4,9 @@
 docker build -t my-nexus:latest .  
 
 ## 运行 my-nexus
-
+~~~bash
 docker run -d -p 8081:8081 --name my-nexus --restart always -v /usr/local/nexus-storage:/usr/local/nexus-storage nexus:latest
-
+~~~
 ## 默认用户和密码  admin |  admin123
 
 ## maven中的 pom.xml 配置
