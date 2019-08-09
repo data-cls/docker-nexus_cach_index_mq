@@ -1,6 +1,6 @@
 ## 1. 构建docker-nexus
 ~~~bash
-解压 Dockerfile  nexus.war  server.xml
+进入/usr/local 目录 解压build-nexus.zip 把 Dockerfile  nexus.war  server.xml 三个文件整理好执行
 
 docker build -t my-nexus:latest .  
 ~~~
