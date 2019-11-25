@@ -1,3 +1,20 @@
+## 空间控制 修改原 /var/lib/docker  到 /home/docker/lib 目录
+
+	#cd etc/docker
+	#vim daemon.json
+
+	{
+	    "graph": "/data/docker"
+	}
+
+	# systemctl daemon-reload
+
+	# systemctl restart docker
+
+	# docker info
+
+
+
 ## 1. 构建docker-nexus
 ~~~bash
 进入/usr/local 目录 解压build-nexus.zip 把 Dockerfile  nexus.war  server.xml 三个文件整理好执行
