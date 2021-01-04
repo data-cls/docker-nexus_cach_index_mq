@@ -45,15 +45,6 @@
           - /mydata/nginx/log:/var/log/nginx
         ports:
           - 80:80
-      rabbitmq:
-        image: rabbitmq:3.7.15-management
-        container_name: rabbitmq
-        volumes:
-          - /mydata/rabbitmq/data:/var/lib/rabbitmq
-          - /mydata/rabbitmq/log:/var/log/rabbitmq
-        ports:
-          - 5672:5672
-          - 15672:15672
       elasticsearch:
         image: elasticsearch:7.6.2
         container_name: elasticsearch
