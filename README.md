@@ -46,7 +46,7 @@
         ports:
           - 80:80
       elasticsearch:
-        image: elasticsearch:7.6.2
+        image: registry.cn-shanghai.aliyuncs.com/caiyc/elasticsearch:6.4.0
         container_name: elasticsearch
         environment:
           - "cluster.name=elasticsearch" 
@@ -59,12 +59,12 @@
           - 9200:9200
           - 9300:9300
       logstash:
-        image: logstash:7.6.2
+        image: registry.cn-shanghai.aliyuncs.com/caiyc/logstash:6.4.0
         container_name: logstash
         environment:
           - TZ=Asia/Shanghai
         volumes:
-          - /mydata/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+          - /mydata/logstash/logstash.conf:/etc/logstash/conf.d
         depends_on:
           - elasticsearch 
         links:
@@ -75,7 +75,7 @@
           - 4562:4562
           - 4563:4563
       kibana:
-        image: kibana:7.6.2
+        image: registry.cn-shanghai.aliyuncs.com/caiyc/kibana:6.4.0
         container_name: kibana
         links:
           - elasticsearch:es
@@ -86,7 +86,7 @@
         ports:
           - 5601:5601
       mongo:
-        image: mongo:4.2.5
+        image: registry.cn-shanghai.aliyuncs.com/caiyc/mongodb:3.2.0
         container_name: mongo
         volumes:
           - /mydata/mongo/db:/data/db
